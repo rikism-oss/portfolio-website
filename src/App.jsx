@@ -392,7 +392,7 @@ export default function App() {
               complex information into clear, practical documentation and video scripts
               that drive product adoption. I work across teams to align content with
               brand voice, user needs, and business goals — and I've done it for
-              organizations ranging from scrappy agencies to nationally recognized brands.
+              organizations ranging from scrappy marketing agencies to nationally recognized brands.
             </p>
             <div>
               <p className="stack-label">Specialties</p>

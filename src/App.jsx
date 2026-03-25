@@ -471,7 +471,7 @@ export default function App() {
       <footer>
         <div className="footer-inner">
           <span className="footer-name">Riki Markowitz</span>
-          <span className="footer-location">New York, NY</span>
+          <span className="footer-location">Richmond, VA</span>
         </div>
       </footer>
 

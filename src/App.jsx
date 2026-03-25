@@ -377,7 +377,7 @@ export default function App() {
               <p className="hero-sub">
                 Content strategist and communications leader with years of experience crafting
                 B2B and customer-facing content for marketing agencies and nationally recognized brands.
-                Based in New York. Available for freelance engagements.
+                Based in Richmond, VA. Available for freelance engagements.
               </p>
             </div>
           </div>

@@ -7,7 +7,7 @@ const PROJECTS = [
     title: "Copy & Script Writing",
     client: "Homes.com",
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
-    desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar’s residential real estate brand, Homes.com.. Aligned tone with evolving brand voice across product lines.",
+    desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar’s residential real estate brand, Homes.com.",
     link: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/",
     linkLabel: "View Sample",
   },
@@ -20,10 +20,10 @@ const PROJECTS = [
   },
   
   {
-    title: "Cross-Team Content Alignment",
-    client: "Marketing Agency",
-    tags: ["Team Leadership", "Brand Voice", "Strategy"],
-    desc: "Led communications across product, design, and marketing teams to create cohesive customer-facing content. Established editorial guidelines adopted across three departments.",
+    title: "Journalism",
+    client: "RealtyLine Austin",
+    tags: ["Reporter", "Research", "Front-Page Feature Articles"],
+    desc: "Wrote monthly front-page feature articles for print and digital properties with a reach exceeding 25,000 Realtors, lenders, appraisers and developers in the Austin-Round Rock MSA.",
     link: "https://issuu.com/realtyline/docs/digital_september_2021",
   },
   {

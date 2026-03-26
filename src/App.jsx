@@ -36,8 +36,8 @@ const PROJECTS = [
 
 const SKILLS = [
  "Copywriting", "Content Strategy", "Consumer & B2B Communications",
-  "Script Writing", "Technical Documentation", "Brand Voice",
-  "Team Leadership", "Stakeholder Alignment",
+  "Video Script Writing", "Technical Documents", "Audience Personas",
+  "Team Leadership", "Research & Reporting",
 ];
 
 const BULLETS = [

@@ -392,7 +392,7 @@ export default function App() {
               <h1>Words that make<br /><em>complex things clear.</em></h1>
               <p className="hero-sub">
                 Copywriter, editor, and reporter with years of experience crafting
-                B2B and customer-facing content for marketing agencies, small businesses, and nationally recognized brands.
+               customer-facing and B2B content for publications, marketing agencies, small businesses, and nationally recognized brands.
                 Based in Richmond, VA. Available for full-time, part-time, and freelance engagements.
               </p>
             </div>

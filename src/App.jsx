@@ -8,8 +8,11 @@ const PROJECTS = [
     client: "Homes.com",
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
     desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar’s residential real estate brand, Homes.com.",
-    link: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/",
-    linkLabel: "View Sample",
+   links: [
+  { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
+  { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
+]
+   
   },
   {
     title: "B2B Content Strategy",

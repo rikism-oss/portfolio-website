@@ -13,10 +13,11 @@ const PROJECTS = [
   },
   {
     title: "B2B Content Strategy",
-    client: "SaaS Platform",
+    client: "Copywriting Consultant",
     tags: ["Content Strategy", "B2B", "Documentation"],
-    desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
-    link: null,
+    desc: "Wrote general-interest articles and advertorials for various clients, including the Energy Security Council.",
+    link: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf",
+   linkLabel: "View Sample",
   },
   
   {

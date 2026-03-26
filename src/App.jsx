@@ -3,56 +3,53 @@ import { useState } from "react";
 const NAV_LINKS = ["About", "Work", "Contact"];
 
 const PROJECTS = [
- {
+  {
     title: "Copy & Script Writing",
     client: "Homes.com",
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
-    desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar’s residential real estate brand, Homes.com.",
-   links: [
-  { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
-  { label: "City Guide", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
-]
-   
+    desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
+    links: [
+      { label: "View Sample", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
+    ],
   },
   {
     title: "B2B Content Strategy",
-    client: "Copywriting Consultant",
+    client: "SaaS Platform",
     tags: ["Content Strategy", "B2B", "Documentation"],
-    desc: "Wrote general-interest articles and advertorials for various clients, including the Energy Security Council.",
-    link: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf",
-   linkLabel: "View Sample",
+    desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
+    links: [],
   },
-  
   {
     title: "Journalism",
     client: "RealtyLine Austin",
     tags: ["Reporter", "Researcher", "Front-Page Features Writer"],
     desc: "Wrote monthly front-page feature articles for print and digital properties for Realtors, lenders, appraisers, and developers across the Austin-Round Rock MSA and nearby Central Texas counties.",
-    link: "https://issuu.com/realtyline/docs/digital_september_2021",
-   linkLabel: "View Sample",
-  
+    links: [
+      { label: "View Sample", url: "https://issuu.com/realtyline/docs/digital_september_2021" },
+    ],
   },
   {
     title: "Reporter & Researcher",
     client: "Various Authors",
     tags: ["Reporter", "Research", "Fact Checking"],
     desc: "Fact checked longform book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs.",
-    link: "https://ajjacobs.com/books/the-year-of-living-constitutionally/",
-   linkLabel: "View Project",
+    links: [
+      { label: "View Project", url: "https://ajjacobs.com/books/the-year-of-living-constitutionally/" },
+    ],
   },
 ];
 
 const SKILLS = [
- "Copywriting", "Content Strategy", "Consumer & B2B Communications",
+  "Copywriting", "Content Strategy", "Consumer & B2B Communications",
   "Video Script Writing", "Technical Documents", "Audience Personas",
   "Team Leadership", "Research & Reporting",
 ];
 
 const BULLETS = [
-  "Customer & B2B-facing content",
+  "B2B & customer-facing content",
   "Complex information made clear",
   "Cross-functional team leadership",
-  "Available for FT, PT, freelance, and remote projects",
+  "Available for freelance engagements",
 ];
 
 export default function App() {
@@ -100,6 +97,26 @@ export default function App() {
           font-weight: 500;
         }
 
+        .pill-link {
+          font-size: 0.72rem;
+          font-weight: 500;
+          color: #c0622f;
+          text-decoration: none;
+          border: 1px solid #f0c4aa;
+          background: #fdf6f0;
+          padding: 0.2rem 0.65rem;
+          border-radius: 9999px;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.2rem;
+          transition: background 0.2s, border-color 0.2s;
+          white-space: nowrap;
+        }
+        .pill-link:hover {
+          background: #f5e6d8;
+          border-color: #c0622f;
+        }
+
         .project-card {
           border: 1px solid #e8c9b3;
           border-radius: 1rem;
@@ -137,19 +154,6 @@ export default function App() {
           transition: color 0.2s;
         }
         .linkedin-link:hover { color: #a0501e; }
-
-        .sample-link {
-          font-size: 0.75rem;
-          font-weight: 600;
-          color: #c0622f;
-          text-decoration: none;
-          display: inline-flex;
-          align-items: center;
-          gap: 0.25rem;
-          letter-spacing: 0.02em;
-          transition: color 0.2s;
-        }
-        .sample-link:hover { color: #a0501e; }
 
         .section-label {
           font-size: 0.7rem;
@@ -314,6 +318,7 @@ export default function App() {
         .proj-desc { font-size: 0.875rem; color: #7a5a45; line-height: 1.65; margin-bottom: 1rem; }
         .proj-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
         .proj-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        .proj-links { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
         .contact-sub { font-size: 0.875rem; color: #7a5a45; line-height: 1.7; max-width: 28rem; margin-bottom: 1.5rem; }
         .contact-row { display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; }
@@ -385,7 +390,7 @@ export default function App() {
               <p className="hero-sub">
                 Copywriter, editor, and reporter with years of experience crafting
                 B2B and customer-facing content for marketing agencies, small businesses, and nationally recognized brands.
-                Based in Richmond, VA. Available for full-time, part-time, and freelance engagements in Richmond and beyond.
+                Based in Richmond, VA. Available for full-time, part-time, and freelance engagements.
               </p>
             </div>
           </div>
@@ -438,15 +443,20 @@ export default function App() {
                       <span key={t} className="tag">{t}</span>
                     ))}
                   </div>
-                  {p.link && (
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="sample-link"
-                    >
-                      {p.linkLabel} →
-                    </a>
+                  {p.links && p.links.length > 0 && (
+                    <div className="proj-links">
+                      {p.links.map((l) => (
+                        
+                          key={l.label}
+                          href={l.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="pill-link"
+                        >
+                          {l.label} ↗
+                        </a>
+                      ))}
+                    </div>
                   )}
                 </div>
               </div>

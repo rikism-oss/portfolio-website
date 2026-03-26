@@ -13,7 +13,7 @@ const PROJECTS = [
   {
     title: "Video Script Production",
     client: "National Brand",
-    tags: ["Video Scripts", "Brand Voice", "Storytelling"],
+    tags: ["Storytelling", "Video Scripts", "Brand Voice"],
     desc: "Wrote and produced a library of 30+ instructional and marketing video scripts for a nationally recognized brand. Aligned tone with evolving brand voice across product lines.",
     link: "https://issuu.com/realtyline/docs/digital_september_2021",
     linkLabel: "View Sample",

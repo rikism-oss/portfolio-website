@@ -17,7 +17,7 @@ const PROJECTS = [
     title: "B2B Content Strategy",
     client: "Various Agencies",
     tags: ["Content Strategy", "Documentation"],
-    desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
+    desc: "Wrote web copy, SEO-optimized landing pages, blog posts, and newsletters for full-stack marketing agencies.",
     links: [ { label: "Energy Security Council", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf" },
            { label: "Venadar", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/cobra-verde-exec-summary-sample.pdf" }],
   },

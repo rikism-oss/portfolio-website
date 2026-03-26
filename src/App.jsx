@@ -446,7 +446,7 @@ export default function App() {
                   {p.links && p.links.length > 0 && (
                     <div className="proj-links">
                       {p.links.map((l) => (
-                        
+                        <a
                           key={l.label}
                           href={l.url}
                           target="_blank"

@@ -22,9 +22,10 @@ const PROJECTS = [
   {
     title: "Journalism",
     client: "RealtyLine Austin",
-    tags: ["Reporter", "Research", "Front-Page Feature Articles"],
-    desc: "Wrote monthly front-page feature articles for print and digital properties with a reach exceeding 25,000 Realtors, lenders, appraisers and developers in the Austin-Round Rock MSA.",
+    tags: ["Reporter", "Researcher", "Front-Page Features Writer"],
+    desc: "Wrote monthly front-page feature articles for print and digital properties for Realtors, lenders, appraisers, and developers across the Austin-Round Rock MSA and nearby Central Texas counties.",
     link: "https://issuu.com/realtyline/docs/digital_september_2021",
+   linkLabel: "View Sample",
   },
   {
     title: "Technical Documentation Overhaul",

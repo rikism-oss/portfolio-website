@@ -49,7 +49,7 @@ const BULLETS = [
   "Customer & B2B-facing content",
   "Complex information made clear",
   "Cross-functional team leadership",
-  "Available for FT, PT, freelance, and remote engagements in Richmond and beyond",
+  "Available for FT, PT, freelance, and remote projects",
 ];
 
 export default function App() {
@@ -382,7 +382,7 @@ export default function App() {
               <p className="hero-sub">
                 Copywriter, editor, and reporter with years of experience crafting
                 B2B and customer-facing content for marketing agencies, small businesses, and nationally recognized brands.
-                Based in Richmond, VA. Available for full-time, part-time, and freelance engagements.
+                Based in Richmond, VA. Available for full-time, part-time, and freelance engagements in Richmond and beyond.
               </p>
             </div>
           </div>

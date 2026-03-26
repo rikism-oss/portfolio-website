@@ -31,7 +31,7 @@ const PROJECTS = [
     title: "Reporter & Researcher",
     client: "Various Authors",
     tags: ["Reporter", "Research", "Fact Checking"],
-    desc: "Fact checked longform book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs and other authors.",
+    desc: "Fact checked longform book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs.",
     link: "https://ajjacobs.com/books/the-year-of-living-constitutionally/",
    linkLabel: "View Project",
   },

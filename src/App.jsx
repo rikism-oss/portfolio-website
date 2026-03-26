@@ -26,8 +26,7 @@ const PROJECTS = [
     desc: "Wrote monthly front-page feature articles for print and digital properties for Realtors, lenders, appraisers, and developers across the Austin-Round Rock MSA and nearby Central Texas counties.",
     link: "https://issuu.com/realtyline/docs/digital_september_2021",
    linkLabel: "View Sample",
-   link: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/religion-feature.pdf",
-   linkLabel: "Here's Another Sample",
+  
   },
   {
     title: "Reporter & Researcher",

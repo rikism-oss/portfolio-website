@@ -28,11 +28,12 @@ const PROJECTS = [
    linkLabel: "View Sample",
   },
   {
-    title: "Technical Documentation Overhaul",
-    client: "Enterprise Software Co.",
-    tags: ["Documentation", "UX Writing", "Content Design"],
-    desc: "Audited and rewrote a 200-page technical documentation suite. Structured complex information into scannable, user-centered content that reduced support ticket volume significantly.",
-    link: null,
+    title: "Reporter & Researcher",
+    client: "Various Authors",
+    tags: ["Reporter", "Research", "Fact Checking"],
+    desc: "Fact checked longform book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs and other authors.",
+    link: "https://ajjacobs.com/books/the-year-of-living-constitutionally/",
+   linkLabel: "View Project",
   },
 ];
 

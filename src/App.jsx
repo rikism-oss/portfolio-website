@@ -7,7 +7,7 @@ const PROJECTS = [
     title: "Copy & Script Writing",
     client: "Homes.com",
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
-    desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
+    desc: "Wrote a library of 50+ neighborhood profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
     links: [
       { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
     { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj/" },
@@ -15,8 +15,8 @@ const PROJECTS = [
   },
   {
     title: "B2B Content Strategy",
-    client: "B2B Content",
-    tags: ["Content Strategy", "B2B", "Documentation"],
+    client: "Various Agencies",
+    tags: ["Content Strategy", "Documentation"],
     desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
     links: [ { label: "Energy Security Council", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf" },
            { label: "Venadar", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/cobra-verde-exec-summary-sample.pdf" }],
@@ -33,18 +33,19 @@ const PROJECTS = [
   {
     title: "Reporter & Researcher",
     client: "Various Authors",
-    tags: ["Reporter", "Research", "Fact Checking"],
-    desc: "Fact checked longform book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs.",
+    tags: ["Reporter", "Researcher", "Fact Checking"],
+    desc: "Fact checked long-form book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs.",
     links: [
-      { label: "View Project", url: "https://ajjacobs.com/books/the-year-of-living-constitutionally/" },
+      { label: "The Year of Living Constitutionally", url: "https://ajjacobs.com/books/the-year-of-living-constitutionally/" },
+      { label: "Rural Rebellion", url: "https://kansaspress.ku.edu/9780700640744/" },
     ],
   },
 ];
 
 const SKILLS = [
   "Copywriting", "Content Strategy", "Consumer & B2B Communications",
-  "Video Script Writing", "Technical Documents", "Audience Personas",
-  "Team Leadership", "Research & Reporting",
+  "Video Script Writing", "Technical Documents", "Research & Reporting", "Audience Personas",
+  "Team Leadership", 
 ];
 
 const BULLETS = [
@@ -470,8 +471,8 @@ export default function App() {
         <section id="contact" style={{ scrollMarginTop: "5rem" }}>
           <p className="section-label">Contact</p>
           <p className="contact-sub">
-            Open to contract work, content strategy engagements, and interesting
-            communications challenges. Phone or email — whatever works.
+            Open to copywriting, content strategy, research & reporting, and interesting
+            communications challenges. 
           </p>
           <div className="contact-row">
             <a href="mailto:rikism@gmail.com" className="cta-btn">

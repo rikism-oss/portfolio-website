@@ -4,11 +4,11 @@ const NAV_LINKS = ["About", "Work", "Contact"];
 
 const PROJECTS = [
  {
-    title: "Video Script Production",
-    client: "National Brand",
+    title: "Copy & Script Writing",
+    client: "Homes.com",
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
-    desc: "Wrote and produced a library of 30+ instructional and marketing video scripts for a nationally recognized brand. Aligned tone with evolving brand voice across product lines.",
-    link: "https://issuu.com/realtyline/docs/digital_september_2021",
+    desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar’s residential real estate brand, Homes.com.. Aligned tone with evolving brand voice across product lines.",
+    link: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/",
     linkLabel: "View Sample",
   },
   {
@@ -24,7 +24,7 @@ const PROJECTS = [
     client: "Marketing Agency",
     tags: ["Team Leadership", "Brand Voice", "Strategy"],
     desc: "Led communications across product, design, and marketing teams to create cohesive customer-facing content. Established editorial guidelines adopted across three departments.",
-    link: null,
+    link: "https://issuu.com/realtyline/docs/digital_september_2021",
   },
   {
     title: "Technical Documentation Overhaul",

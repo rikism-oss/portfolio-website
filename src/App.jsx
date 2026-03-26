@@ -46,10 +46,10 @@ const SKILLS = [
 ];
 
 const BULLETS = [
-  "B2B & customer-facing content",
+  "Customer & B2B-facing content",
   "Complex information made clear",
   "Cross-functional team leadership",
-  "Available for freelance engagements",
+  "Available for FT, PT, freelance, and remote engagements in Richmond and beyond",
 ];
 
 export default function App() {

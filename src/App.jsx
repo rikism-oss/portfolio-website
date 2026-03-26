@@ -3,14 +3,7 @@ import { useState } from "react";
 const NAV_LINKS = ["About", "Work", "Contact"];
 
 const PROJECTS = [
-  {
-    title: "B2B Content Strategy",
-    client: "SaaS Platform",
-    tags: ["Content Strategy", "B2B", "Documentation"],
-    desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
-    link: null,
-  },
-  {
+ {
     title: "Video Script Production",
     client: "National Brand",
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
@@ -18,6 +11,14 @@ const PROJECTS = [
     link: "https://issuu.com/realtyline/docs/digital_september_2021",
     linkLabel: "View Sample",
   },
+  {
+    title: "B2B Content Strategy",
+    client: "SaaS Platform",
+    tags: ["Content Strategy", "B2B", "Documentation"],
+    desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
+    link: null,
+  },
+  
   {
     title: "Cross-Team Content Alignment",
     client: "Marketing Agency",

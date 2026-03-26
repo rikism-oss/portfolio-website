@@ -9,24 +9,26 @@ const PROJECTS = [
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
     desc: "Wrote a library of 50+ neighborhood and city profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
     links: [
-      { label: "View Sample", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
+      { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
+    { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj/" },
     ],
   },
   {
     title: "B2B Content Strategy",
-    client: "SaaS Platform",
+    client: "B2B Content",
     tags: ["Content Strategy", "B2B", "Documentation"],
     desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
-    links: [],
+    links: [ { label: "Energy Security Council", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf" },
+           { label: "Venadar", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/cobra-verde-exec-summary-sample.pdf" }],
   },
   {
     title: "Journalism",
-    client: "RealtyLine Austin",
+    client: "News & Real Estate Reporting",
     tags: ["Reporter", "Researcher", "Front-Page Features Writer"],
     desc: "Wrote monthly front-page feature articles for print and digital properties for Realtors, lenders, appraisers, and developers across the Austin-Round Rock MSA and nearby Central Texas counties.",
     links: [
-      { label: "View Sample", url: "https://issuu.com/realtyline/docs/digital_september_2021" },
-    ],
+      { label: "RealtyLine Austin", url: "https://issuu.com/realtyline/docs/digital_september_2021/" },
+   { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" } ],
   },
   {
     title: "Reporter & Researcher",

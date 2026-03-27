@@ -1,59 +1,45 @@
 import { useState } from "react";
-import portfolioImg from "./assets/Portfolio-photo.jpeg";
 
 const NAV_LINKS = ["About", "Work", "Contact"];
 
 const PROJECTS = [
   {
-    title: "Copy &  Writing",
-    client: "Homes.com",
-    tags: ["Storytelling", "Video Scripts", "Brand Voice"],
-    desc: "Wrote a library of 50+ neighborhood profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
-    links: [
-      { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
-      { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
-    ],
-  },
-  {
     title: "B2B Content Strategy",
-    client: "Various Agencies",
-    tags: ["Industry Communications", "Technical Documents"],
-    desc: "Produced SEO-optimized landing pages, wrote web copy, blog posts, advertorials, newsletters, and product launch documents for full-stack marketing agencies.",
-    links: [
-      { label: "Energy Security Council", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf" },
-      { label: "Venadar", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/cobra-verde-exec-summary-sample.pdf" },
-    ],
+    client: "SaaS Platform",
+    tags: ["Content Strategy", "B2B", "Documentation"],
+    desc: "Developed end-to-end content framework for a complex SaaS product. Translated technical specs into clear user documentation and onboarding flows that improved product adoption by 40%.",
   },
   {
-    title: "Journalism",
-    client: "News & Real Estate Reporting",
-    tags: ["Front-Page Features Writer", "Metro News Reporting"],
-    desc: "Reported monthly front-page feature articles for a Central Texas real estate publication and wrote local news stories for a major metro newspaper in Houston.",
-    links: [
-      { label: "RealtyLine Austin", url: "https://issuu.com/realtyline/docs/digital_september_2021/" },
-      { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" },
-    ],
+    title: "Video Script Production",
+    client: "National Brand",
+    tags: ["Video Scripts", "Brand Voice", "Storytelling"],
+    desc: "Wrote and produced a library of 30+ instructional and marketing video scripts for a nationally recognized brand. Aligned tone with evolving brand voice across product lines.",
   },
   {
-    title: "Reporter & Researcher",
-    client: "Various Authors",
-    tags: ["Research", "Fact Checking"],
-    desc: "Fact checked long-form book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs.",
-    links: [
-      { label: "The Year of Living Constitutionally", url: "https://ajjacobs.com/books/the-year-of-living-constitutionally/" },
-      { label: "Rural Rebellion", url: "https://kansaspress.ku.edu/9780700640744/" },
-    ],
+    title: "Cross-Team Content Alignment",
+    client: "Marketing Agency",
+    tags: ["Team Leadership", "Brand Voice", "Strategy"],
+    desc: "Led communications across product, design, and marketing teams to create cohesive customer-facing content. Established editorial guidelines adopted across three departments.",
+  },
+  {
+    title: "Technical Documentation Overhaul",
+    client: "Enterprise Software Co.",
+    tags: ["Documentation", "UX Writing", "Content Design"],
+    desc: "Audited and rewrote a 200-page technical documentation suite. Structured complex information into scannable, user-centered content that reduced support ticket volume significantly.",
   },
 ];
 
 const SKILLS = [
-  "Copywriting", "Content Strategy", "Consumer & B2B Communications",
-  "Video Script Writing", "Technical Documents", "News Reporting", "Audience Personas",
+  "Content Strategy", "B2B Communications", "UX Writing",
+  "Video Scripting", "Technical Documentation", "Brand Voice",
+  "Team Leadership", "Editorial Planning", "Stakeholder Alignment",
 ];
 
 const BULLETS = [
+  "B2B & customer-facing content",
   "Complex information made clear",
-  "AI-Assisted Content & Web Development",
+  "Cross-functional team leadership",
+  "Available for freelance engagements",
 ];
 
 export default function App() {
@@ -99,26 +85,6 @@ export default function App() {
           padding: 0.2rem 0.65rem;
           border-radius: 9999px;
           font-weight: 500;
-        }
-
-        .pill-link {
-          font-size: 0.72rem;
-          font-weight: 500;
-          color: #c0622f;
-          text-decoration: none;
-          border: 1px solid #f0c4aa;
-          background: #fdf6f0;
-          padding: 0.2rem 0.65rem;
-          border-radius: 9999px;
-          display: inline-flex;
-          align-items: center;
-          gap: 0.2rem;
-          transition: background 0.2s, border-color 0.2s;
-          white-space: nowrap;
-        }
-        .pill-link:hover {
-          background: #f5e6d8;
-          border-color: #c0622f;
         }
 
         .project-card {
@@ -320,9 +286,7 @@ export default function App() {
         .proj-title { font-weight: 600; color: #2a1a10; font-size: 0.95rem; }
         .proj-client { font-size: 0.75rem; color: #c0622f; font-weight: 500; }
         .proj-desc { font-size: 0.875rem; color: #7a5a45; line-height: 1.65; margin-bottom: 1rem; }
-        .proj-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
         .proj-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-        .proj-links { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 
         .contact-sub { font-size: 0.875rem; color: #7a5a45; line-height: 1.7; max-width: 28rem; margin-bottom: 1.5rem; }
         .contact-row { display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; }
@@ -386,19 +350,15 @@ export default function App() {
         <section>
           <div className="hero-grid">
             <div className="avatar-ring">
-              <img
-                src={portfolioImg}
-                alt="Portfolio Photo"
-                className="w-full h-full object-cover"
-              />
+              <span className="avatar-initials">RM</span>
             </div>
             <div>
               <p className="eyebrow">Communications Specialist</p>
               <h1>Words that make<br /><em>complex things clear.</em></h1>
               <p className="hero-sub">
-                Copywriter, editor, and reporter with years of experience crafting
-                customer-facing and B2B content for publications, marketing agencies, small businesses, and nationally recognized brands.
-                Based in Richmond, VA. Available for full-time, part-time, and freelance engagements.
+                Content strategist and communications leader with years of experience crafting
+                B2B and customer-facing content for marketing agencies and nationally recognized brands.
+                Based in New York. Available for freelance engagements.
               </p>
             </div>
           </div>
@@ -409,11 +369,11 @@ export default function App() {
           <p className="section-label">About</p>
           <div className="about-grid">
             <p className="about-body">
-              Highly organized writer and communications specialist with a talent for transforming
+              Highly organized communications specialist with a talent for transforming
               complex information into clear, practical documentation and video scripts
               that drive product adoption. I work across teams to align content with
               brand voice, user needs, and business goals — and I've done it for
-              organizations ranging from scrappy marketing agencies to consumer magazines and major metro newspapers.
+              organizations ranging from scrappy agencies to nationally recognized brands.
             </p>
             <div>
               <p className="stack-label">Specialties</p>
@@ -445,27 +405,10 @@ export default function App() {
                   <span className="proj-client">{p.client}</span>
                 </div>
                 <p className="proj-desc">{p.desc}</p>
-                <div className="proj-footer">
-                  <div className="proj-tags">
-                    {p.tags.map((t) => (
-                      <span key={t} className="tag">{t}</span>
-                    ))}
-                  </div>
-                  {p.links && p.links.length > 0 && (
-                    <div className="proj-links">
-                      {p.links.map((l) => (
-                        <a
-                          key={l.label}
-                          href={l.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="pill-link"
-                        >
-                          {l.label} ↗
-                        </a>
-                      ))}
-                    </div>
-                  )}
+                <div className="proj-tags">
+                  {p.tags.map((t) => (
+                    <span key={t} className="tag">{t}</span>
+                  ))}
                 </div>
               </div>
             ))}
@@ -476,13 +419,14 @@ export default function App() {
         <section id="contact" style={{ scrollMarginTop: "5rem" }}>
           <p className="section-label">Contact</p>
           <p className="contact-sub">
-            Open to copywriting, content strategy, research & reporting, and interesting
-            communications challenges.
+            Open to contract work, content strategy engagements, and interesting
+            communications challenges. Phone or email — whatever works.
           </p>
           <div className="contact-row">
             <a href="mailto:rikism@gmail.com" className="cta-btn">
               Get in touch
             </a>
+
             <a href="https://www.linkedin.com/in/riki-markowitz" target="_blank" rel="noopener noreferrer" className="linkedin-link">
               <svg style={{ width: 16, height: 16 }} fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -497,7 +441,7 @@ export default function App() {
       <footer>
         <div className="footer-inner">
           <span className="footer-name">Riki Markowitz</span>
-          <span className="footer-location">Richmond, VA</span>
+          <span className="footer-location">New York, NY</span>
         </div>
       </footer>
 

@@ -1,16 +1,17 @@
 import { useState } from "react";
+import portfolioImg from "./assets/Portfolio-photo.jpeg";
 
 const NAV_LINKS = ["About", "Work", "Contact"];
 
 const PROJECTS = [
   {
-    title: "Copy & Script Writing",
+    title: "Copy &  Writing",
     client: "Homes.com",
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
     desc: "Wrote a library of 50+ neighborhood profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
     links: [
       { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
-    { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
+      { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
     ],
   },
   {
@@ -18,8 +19,10 @@ const PROJECTS = [
     client: "Various Agencies",
     tags: ["Industry Communications", "Technical Documents"],
     desc: "Produced SEO-optimized landing pages, wrote web copy, blog posts, advertorials, newsletters, and product launch documents for full-stack marketing agencies.",
-    links: [ { label: "Energy Security Council", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf" },
-           { label: "Venadar", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/cobra-verde-exec-summary-sample.pdf" }],
+    links: [
+      { label: "Energy Security Council", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf" },
+      { label: "Venadar", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/cobra-verde-exec-summary-sample.pdf" },
+    ],
   },
   {
     title: "Journalism",
@@ -28,7 +31,8 @@ const PROJECTS = [
     desc: "Reported monthly front-page feature articles for a Central Texas real estate publication and wrote local news stories for a major metro newspaper in Houston.",
     links: [
       { label: "RealtyLine Austin", url: "https://issuu.com/realtyline/docs/digital_september_2021/" },
-   { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" } ],
+      { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" },
+    ],
   },
   {
     title: "Reporter & Researcher",
@@ -45,14 +49,11 @@ const PROJECTS = [
 const SKILLS = [
   "Copywriting", "Content Strategy", "Consumer & B2B Communications",
   "Video Script Writing", "Technical Documents", "News Reporting", "Audience Personas",
-  
 ];
 
 const BULLETS = [
-  
   "Complex information made clear",
-  "AI Integrated Content & Web Optimization",
- 
+  "AI-Assisted Content & Web Development",
 ];
 
 export default function App() {
@@ -385,14 +386,18 @@ export default function App() {
         <section>
           <div className="hero-grid">
             <div className="avatar-ring">
-              <span className="avatar-initials">RM</span>
+              <img
+                src={portfolioImg}
+                alt="Portfolio Photo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <p className="eyebrow">Communications Specialist</p>
               <h1>Words that make<br /><em>complex things clear.</em></h1>
               <p className="hero-sub">
                 Copywriter, editor, and reporter with years of experience crafting
-               customer-facing and B2B content for publications, marketing agencies, small businesses, and nationally recognized brands.
+                customer-facing and B2B content for publications, marketing agencies, small businesses, and nationally recognized brands.
                 Based in Richmond, VA. Available for full-time, part-time, and freelance engagements.
               </p>
             </div>
@@ -472,7 +477,7 @@ export default function App() {
           <p className="section-label">Contact</p>
           <p className="contact-sub">
             Open to copywriting, content strategy, research & reporting, and interesting
-            communications challenges. 
+            communications challenges.
           </p>
           <div className="contact-row">
             <a href="mailto:rikism@gmail.com" className="cta-btn">
@@ -499,3 +504,4 @@ export default function App() {
     </div>
   );
 }
+

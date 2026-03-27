@@ -16,16 +16,16 @@ const PROJECTS = [
   {
     title: "B2B Content Strategy",
     client: "Various Agencies",
-    tags: ["Content Strategy", "Documentation"],
-    desc: "Wrote web copy, SEO-optimized landing pages, blog posts, and newsletters for full-stack marketing agencies.",
+    tags: ["Industry Communications", "Technical Documents"],
+    desc: "Produced SEO-optimized landing pages, wrote web copy, blog posts, advertorials, newsletters, and product launch documents for full-stack marketing agencies.",
     links: [ { label: "Energy Security Council", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/patch-security.pdf" },
            { label: "Venadar", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/cobra-verde-exec-summary-sample.pdf" }],
   },
   {
     title: "Journalism",
     client: "News & Real Estate Reporting",
-    tags: ["Reporter", "Researcher", "Front-Page Features Writer"],
-    desc: "Wrote monthly front-page feature articles for print and digital properties for Realtors, lenders, appraisers, and developers across the Austin-Round Rock MSA and nearby Central Texas counties.",
+    tags: ["Front-Page Features Writer", "Metro News Reporting"],
+    desc: "Reported monthly front-page feature articles for a Central Texas real estate publication and wrote local news stories for a major metro newspaper in Houston.",
     links: [
       { label: "RealtyLine Austin", url: "https://issuu.com/realtyline/docs/digital_september_2021/" },
    { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" } ],
@@ -33,7 +33,7 @@ const PROJECTS = [
   {
     title: "Reporter & Researcher",
     client: "Various Authors",
-    tags: ["Reporter", "Researcher", "Fact Checking"],
+    tags: ["Research", "Fact Checking"],
     desc: "Fact checked long-form book projects and provided supplemental reporting assistance for various authors, including New York Times Bestselling author, A.J. Jacobs.",
     links: [
       { label: "The Year of Living Constitutionally", url: "https://ajjacobs.com/books/the-year-of-living-constitutionally/" },
@@ -44,15 +44,15 @@ const PROJECTS = [
 
 const SKILLS = [
   "Copywriting", "Content Strategy", "Consumer & B2B Communications",
-  "Video Script Writing", "Technical Documents", "Research & Reporting", "Audience Personas",
-  "Team Leadership", 
+  "Video Script Writing", "Technical Documents", "News Reporting", "Audience Personas",
+  
 ];
 
 const BULLETS = [
-  "B2B & customer-facing content",
+  
   "Complex information made clear",
-  "Cross-functional team leadership",
-  "Available for freelance engagements",
+  "AI Integrated Content & Web Optimization",
+ 
 ];
 
 export default function App() {
@@ -404,11 +404,11 @@ export default function App() {
           <p className="section-label">About</p>
           <div className="about-grid">
             <p className="about-body">
-              Highly organized communications specialist with a talent for transforming
+              Highly organized writer and communications specialist with a talent for transforming
               complex information into clear, practical documentation and video scripts
               that drive product adoption. I work across teams to align content with
               brand voice, user needs, and business goals — and I've done it for
-              organizations ranging from scrappy marketing agencies to nationally recognized brands.
+              organizations ranging from scrappy marketing agencies to consumer magazines and major metro newspapers.
             </p>
             <div>
               <p className="stack-label">Specialties</p>

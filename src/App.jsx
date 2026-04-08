@@ -21,7 +21,7 @@ const PROJECTS = [
     desc: "Produced SEO-optimized landing pages, web copy, blog posts, advertorials, newsletters, and product launch slide decks for full-stack marketing agencies.",
     links: [ { label: "Energy Security Council", url: "/patch-security.html", internal: true },
            { label: "Venadar", url: "/cobra-verde-exec-summary-sample.html", internal: true },
-            { label: "Home Builders Association", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2018/02/screen-shot-2018-02-24-at-4-02-28-pm.png" }],
+           { label: "Home Builders Association", url: "/hba-building-a-home.html", internal: true }],
   },
   {
     title: "Journalism",

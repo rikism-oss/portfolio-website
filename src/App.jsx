@@ -21,7 +21,7 @@ const PROJECTS = [
     desc: "Produced SEO-optimized landing pages, web copy, blog posts, advertorials, newsletters, and product launch slide decks for full-stack marketing agencies.",
     links: [ { label: "Energy Security Council", url: "/patch-security.html", internal: true },
            { label: "Venadar", url: "/cobra-verde-exec-summary-sample.html", internal: true },
-           { label: "Home Builders Association", url: "/hba-building-a-home.html", internal: true }],
+           { label: "Home Builders Association", url: "/HBA_Building_a_Home.png", internal: true }],
   },
   {
     title: "Journalism",

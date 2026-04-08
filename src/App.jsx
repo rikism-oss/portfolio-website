@@ -1,6 +1,11 @@
 import { useState } from "react";
 import portfolioImg from "./assets/Portfolio-photo.jpeg";
 import hbaImg from "./assets/HBA_Building_a_Home.png";
+// FIX: You put HoustonChron_War_Vet.html in the assets folder but referenced it
+// as a plain string path "/HoustonChron_War_Vet.html" — that only works for files
+// in the /public folder. Since it's in /assets, it must be imported like the
+// other asset files above, then used as a variable in the links array below.
+import houstonChronImg from "./assets/HoustonChron_War_Vet.html";
 
 const NAV_LINKS = ["About", "Work", "Contact"];
 
@@ -33,7 +38,10 @@ const PROJECTS = [
     desc: "Reported monthly front-page feature articles for a Central Texas real estate publication, RealtyLine Austin, and wrote local news stories for a major metro newspaper, Houston Chronicle.",
     links: [
       { label: "RealtyLine Austin", url: "https://issuu.com/realtyline/docs/digital_september_2021/" },
-      { label: "Houston Chronicle", url: "/HoustonChron_War_Vet.html", internal: true },
+      // FIX: Changed from { url: "/HoustonChron_War_Vet.html", internal: true }
+      // to use the imported variable instead. Also removed internal:true since
+      // Vite resolves imported assets to their own URLs automatically.
+      { label: "Houston Chronicle", url: houstonChronImg },
     ],
   },
   {

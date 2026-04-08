@@ -1,5 +1,6 @@
 import { useState } from "react";
-import portfolioImg from "./assets/Portfolio-photo.jpeg" //
+import portfolioImg from "./assets/Portfolio-photo.jpeg";
+import hbaImg from "./assets/HBA_Building_a_Home.png";
 
 const NAV_LINKS = ["About", "Work", "Contact"];
 
@@ -11,7 +12,7 @@ const PROJECTS = [
     desc: "Wrote a library of 50+ neighborhood profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
     links: [
       { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
-    { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
+      { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
     ],
   },
   {
@@ -19,9 +20,11 @@ const PROJECTS = [
     client: "Various Agencies",
     tags: ["Industry Communications", "Technical Documents"],
     desc: "Produced SEO-optimized landing pages, web copy, blog posts, advertorials, newsletters, and product launch slide decks for full-stack marketing agencies.",
-    links: [ { label: "Energy Security Council", url: "/patch-security.html", internal: true },
-           { label: "Venadar", url: "/cobra-verde-exec-summary-sample.html", internal: true },
-           { label: "Home Builders Association", url: "/HBA_Building_a_Home.png", internal: true }],
+    links: [
+      { label: "Energy Security Council", url: "/patch-security.html", internal: true },
+      { label: "Venadar", url: "/cobra-verde-exec-summary-sample.html", internal: true },
+      { label: "Home Builders Association", url: hbaImg },
+    ],
   },
   {
     title: "Journalism",
@@ -30,7 +33,8 @@ const PROJECTS = [
     desc: "Reported monthly front-page feature articles for a Central Texas real estate publication, RealtyLine Austin, and wrote local news stories for a major metro newspaper, Houston Chronicle.",
     links: [
       { label: "RealtyLine Austin", url: "https://issuu.com/realtyline/docs/digital_september_2021/" },
-   { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" } ],
+      { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" },
+    ],
   },
   {
     title: "Reporter & Researcher",
@@ -47,14 +51,11 @@ const PROJECTS = [
 const SKILLS = [
   "Copywriting", "Content Strategy", "Consumer & B2B Communications",
   "Video Script Writing", "Technical Documents", "News Reporting", "Audience Personas",
-
 ];
 
 const BULLETS = [
-
   "Complex information made clear",
   "AI-Assisted Content & Web Development",
-
 ];
 
 export default function App() {
@@ -388,17 +389,17 @@ export default function App() {
           <div className="hero-grid">
             <div className="avatar-ring">
               <img
-              	src={portfolioImg}
-                  alt="Portfolio Photo"
-                    className="w-full h-full object-cover"
-                />
+                src={portfolioImg}
+                alt="Portfolio Photo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <p className="eyebrow">Communications Specialist</p>
               <h1>Words that make<br /><em>complex things clear.</em></h1>
               <p className="hero-sub">
                 Copywriter, editor, and reporter with years of experience crafting
-               customer-facing and B2B content for publications, marketing agencies, small businesses, and nationally recognized brands.
+                customer-facing and B2B content for publications, marketing agencies, small businesses, and nationally recognized brands.
                 Based in Richmond, VA. Available for full-time, part-time, and freelance engagements.
               </p>
             </div>
@@ -504,4 +505,3 @@ export default function App() {
     </div>
   );
 }
-

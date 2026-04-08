@@ -462,7 +462,7 @@ export default function App() {
                           {...(!l.internal && { target: "_blank", rel: "noopener noreferrer" })}
                           className="pill-link"
                         >
-                          {l.label}{l.internal ? "" : " ↗"}
+                          {l.label} ↗
                         </a>
                       ))}
                     </div>

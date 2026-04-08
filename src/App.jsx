@@ -11,8 +11,8 @@ const PROJECTS = [
     tags: ["Storytelling", "Video Scripts", "Brand Voice"],
     desc: "Wrote a library of 50+ neighborhood profiles and video scripts to help build CoStar's residential real estate brand, Homes.com.",
     links: [
-      { label: "Neighborhood Profile", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
-      { label: "Video Script", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/?dk=v6de4wd42r9rj" },
+      { label: "Legend Oaks", url: "https://www.homes.com/local-guide/austin-tx/legend-oaks-neighborhood/" },
+      { label: "New Rochelle", url: "https://www.homes.com/local-guide/new-rochelle-ny/downtown-new-rochelle-neighborhood/" },
     ],
   },
   {

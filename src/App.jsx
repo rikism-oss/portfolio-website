@@ -33,7 +33,7 @@ const PROJECTS = [
     desc: "Reported monthly front-page feature articles for a Central Texas real estate publication, RealtyLine Austin, and wrote local news stories for a major metro newspaper, Houston Chronicle.",
     links: [
       { label: "RealtyLine Austin", url: "https://issuu.com/realtyline/docs/digital_september_2021/" },
-      { label: "Houston Chronicle", url: "https://rikimarkowitz.wordpress.com/wp-content/uploads/2011/10/war-vet.pdf" },
+      { label: "Houston Chronicle", url: "HoustonChron_War_Vet.html", internal: true },
     ],
   },
   {
